@@ -23,7 +23,7 @@ async function getPhotos(rovername: rover, cameratype: camera, res: any) {
           return pic.img_src; //.jpg url
         });
 
-        photos = Object.keys(photos).length === 0 ? 'Rover does not have this camera type' : photos
+        photos = Object.keys(photos).length === 0 ? 'Rover does not have this camera type or photos with this camera type' : photos
         res.send(photos); // sends list of photo urls
       });
   }

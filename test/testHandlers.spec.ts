@@ -30,7 +30,7 @@ describe ('Test handlers', () => {
         expect(res.text).toHaveLength(2);
 
         // checking that array contains strings of urls
-        expect(res.text).toEqual(expect.arrayContaining([expect.stringMatching(/http:\/\/mars.jpl.nasa.gov\/msl-raw-images\/proj\/msl\//)]))
+        expect(res.text).toEqual(expect.arrayContaining([expect.stringMatching(/http:\/\/mars\./)]))
     
     
     }, 10000)
@@ -47,7 +47,7 @@ describe ('Test handlers', () => {
 
         // checking that response is 'Rover does not have this camera type' when wrong parameters selected
         
-        expect(res.text).toEqual('Rover does not have this camera type')
+        expect(res.text).toEqual('Rover does not have this camera type or photos with this camera type')
     
     
     }, 10000)

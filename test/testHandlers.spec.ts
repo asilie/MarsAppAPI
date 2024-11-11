@@ -1,9 +1,6 @@
-const request = require("supertest");
-import express from "express";
 import { getRovers, getPhotos } from "../src/routes/handlers";
 import { rover } from "../src/enums/rovername";
 import { camera } from "../src/enums/cameratype";
-import { escape } from "querystring";
 
 describe ('Test handlers', () => {
     it('tests /rovers endpoint', async () => {

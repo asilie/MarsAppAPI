@@ -2,10 +2,10 @@
   "name": "marsappapi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
     "test": "jest",
-    "start": "nodemon src/server.ts"
+    "start": "nodemon src/app.ts"
   },
   "repository": {
     "type": "git",

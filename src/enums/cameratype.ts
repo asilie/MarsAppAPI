@@ -1,3 +1,5 @@
+import {z} from 'zod';
+
 export enum Camera {
     fhaz = "fhaz",
     rhaz = "rhaz",
@@ -9,3 +11,5 @@ export enum Camera {
     pancam = "pancam",
     minites = "minites"
 }
+
+export const cameraParse = z.nativeEnum(Camera);

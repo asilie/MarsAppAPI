@@ -1,4 +1,4 @@
-export enum camera {
+export enum Camera {
     fhaz = "fhaz",
     rhaz = "rhaz",
     mast = "mast",

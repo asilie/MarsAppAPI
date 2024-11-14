@@ -1,4 +1,4 @@
-export default interface photo {
+export default interface Photo {
     id: number;
     sol: number;
     camera: { 
